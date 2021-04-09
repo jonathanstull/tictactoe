@@ -14,10 +14,19 @@ Game {
       (.marked) a method to mark spaces
       something else that's a method
   players: {
-    player1: player1,
-    player2: player2,
-    a method to pass the player value to the game or board
+    player1: {
+      name = name,
+      id = 01,
+      wins = 0
+    }
+    player2: {
+      name = name,
+      id = 01,
+      wins = 0
+    }
+    (.markedBy) method to pass the currentPlayer value to the game or board
     (.show) to show the player value to the players
+    Player constructor
     }
     (.toggle) method to toggle between players with a Boolean setting variable currentPlayer
     a method to pass the current player value to the game or board
@@ -26,4 +35,5 @@ Game {
   a Boolean to test each turn for victory conditions or ties
   something else that's a method
   }
+  board constructor
 }
